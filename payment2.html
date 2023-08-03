@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VI Plans</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="mob1">
+            <div id="mob2">
+                <h3 class="head" id="head11">Select the Payment Method.
+                </h3>
+                <h3 class="head" id="head11">$ 459.
+                </h3>
+                <form action="" method="">
+                    <br>
+                    <div class="csa">
+                        
+                        <span class="plan1">Pay with UPI</span>
+                        <input type="radio" name="type" id="jiop1" class="jioplans">
+                    </div>
+
+                    <br>
+                    <div class="csa">
+                        
+                        <span class="plan1">Pay with NetBanking</span>
+                        <input type="radio" name="type" id="jiop2" class="jioplans">
+                    </div>
+                    <br>
+                    <div class="csa">
+                        
+                        <span class="plan1">Pay with Debit/Credit card</span>
+                        <input type="radio" name="type" id="jiop3" class="jioplans">
+                    </div>
+                    <Button id="payment" onclick="paydone()">Pay</Button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script>
+    function paydone(){
+        alert("Thank you! Your payment is done.");
+        window.open("rechargepage2.html")
+    }
+</script>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airtel Plans</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="mob1">
+            <div id="mob2">
+                <h3 class="head" id="head11">Select the desired plan.
+                </h3>
+                <form action="" method="">
+                    <br>
+                    <div class="csa">
+                        <span class="plan1">$ 259</span>
+                        <span class="plan1">28 days</span>
+                        <span class="plan1">1.5gb/day</span>
+                        <input type="radio" name="type" value="259" id="jiop" class="jioplans">
+                    </div>
+
+                    <br>
+                    <div class="csa">
+                        <span class="plan1">$ 459</span>
+                        <span class="plan1">56 days</span>
+                        <span class="plan1">2gb/day</span>
+                        <input type="radio" name="type" value="459" id="jiop" class="jioplans">
+                    </div>
+                    <br>
+                    <div class="csa">
+                        <span class="plan1">$ 759</span>
+                        <span class="plan1">84 days</span>
+                        <span class="plan1">2gb/day</span>
+                        <input type="radio" name="type" value="759" id="jiop" class="jioplans">
+                    </div>
+                    
+                    <Button id="jioplansub" onclick="pay12()">Proceed to pay</Button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function pay12(){
+        let v= document.querySelector('input[name="type"]:checked').value;
+        if(v==259){
+            window.open("payment1.html");
+        }
+        else if(v==459){
+            window.open("payment2.html");
+            
+        }
+        else if(v==759){
+            window.open("payment3.html");
+
+        }
+
+    }
+</script>
+
+</html>

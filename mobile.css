@@ -1,0 +1,155 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#container{
+    background-color: azure;
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: center;
+    align-items: center;
+}
+#mob1{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(243, 12, 12); */
+    justify-content: center;
+    height: 680px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgb(43, 43, 43);
+}
+#mob2{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* border: 1px solid rgb(45, 17, 206); */
+    border-radius: 10px;
+    height: 600px;
+    background-color: white;
+    width: 400px;
+
+}
+input[type = "text"]{
+    height: 30px;
+    position: relative;
+    left: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px dotted black;
+}
+input[type = "password"]{
+    height: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px dotted black;
+}
+input[type = "submit"]{
+    position: relative;
+    left: 45px;
+    background: none;
+    border: none;
+    height: 20px;
+    width: 60px;
+}
+input[type = "submit"]:hover{
+    background: azure;
+    border: 1px solid grey;
+}
+input[type = "reset"]{
+    position: relative;
+    left: 45px;
+    background: none;
+    border: none;
+    height: 20px;
+    width: 60px;
+}
+input[type = "reset"]:hover{
+    background: azure;
+    border: 1px solid grey;
+}
+#head1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    bottom: 60px;
+    color: rgb(86, 78, 129);
+    font-size: 20px;
+}
+#head11{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    bottom: 60px;
+    color: rgb(86, 78, 129);
+    font-size: 30px;
+}
+#head2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    bottom: 30px;
+    font-size: 30px;
+    color: rgb(89, 159, 180);
+
+}
+#selectop{
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(89, 159, 180);
+}
+#optionsop{
+    height: 20px;
+    width: 60px;
+    border: none;
+    border-bottom: 1px dotted black;
+}
+.csa{
+    border: 1px solid rgb(30, 7, 145);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(67, 67, 150);
+}
+.plan1{
+    padding-right: 40px;
+}
+.jioplans{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    left: 900px;
+}
+#jioplansub{
+    position: relative;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    top: 40px;
+    left: 110px;
+    border-radius: 20px;
+    background: none;
+    border: none;
+}
+#jioplansub:hover{
+    background: azure;
+    border: 1px solid grey;
+}
+#payment:hover{
+    background: azure;
+    border: 1px solid grey;
+}
+#payment{
+    position: relative;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    top: 40px;
+    left: 80px;
+    border-radius: 20px;
+    background: none;
+    border: none;
+}

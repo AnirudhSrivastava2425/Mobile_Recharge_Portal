@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recharge Portal</title>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <div id="container">
+        <div id="mob1">
+            <div id="mob2">
+                <h3 class="head" id="head1">Welcome user, Lets recharge your phone.
+                </h3 >    
+                <h3 class="head" id="head2">Enter Your Mobile details</h3>        
+                <form action="" method = "">
+                    <input type="text" id="mobileno" placeholder = "Mobile No.">
+                    <br><br>
+                    <label id="selectop" for="operator">Select Operator : </label>
+                    <select id="optionsop" name="operator" id="operation">
+                        <option value="Select">Select</option>
+                        <option value="Jio">Jio</option>
+                        <option value="VI">VI</option>
+                        <option value="Airtel">Airtel</option>
+                    </select>
+                    <br><br>
+                    <!-- Select Sim Type:- 
+                    <br>
+                    <label for="pre">Pre-paid Sim</label>
+                    <input type="radio" name="type" id="pre">
+                    <br>
+                    <label for="post">post-paid Sim</label>
+                    <input type="radio" name="type" id="post"> -->
+                    <br><br>
+                    <input type="submit" value="Submit" onclick="clickplan()">
+                    <input type="reset" value="Clear">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function clickplan(){
+        let v = document.getElementById("optionsop").value;
+        let x = document.getElementById("mobileno").value;
+        if(v=="Select" || x.length!=10)
+        {
+            alert("Please select an appropriate selector or check the entered phone number again.");
+        }
+        else if(v=="Jio")
+        {
+            window.open("planselectjio.html");
+        }
+        else if(v=="Airtel")
+        {
+            window.open("planselectairtel.html");
+            
+        }
+        else if(v=="VI")
+        {
+            window.open("planselectvi.html");
+
+        }
+    }
+
+</script>
+</html>
